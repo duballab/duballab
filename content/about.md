@@ -17,17 +17,18 @@ We investigate aging and brain disease from the cellular and molecular to the ne
 **What have we discovered?**  
 Recently, we discovered two “anti-aging” strategies that may potentially lead to novel treatment strategies to promote healthy aging:
 
+![Green and red fluorescent neurons in the mouse hippocampus CA1](../images/slide-hippocampus.jpg)  
+*[Abdulai-Saiku et al. (2025) Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC11798838/)*
+
 1. **Sex chromosomes impact longevity and disease susceptibility.**  
    Females live longer than males across varied economic, cultural, and environmental conditions and even with neurodegenerative disease. Though social and behavioral factors may influence female longevity, it is a fundamental biological phenomenon that spans much of the animal kingdom. Remarkably, molecular mechanisms that underlie female longevity have long remained unknown. How do females live longer? Do underlying mechanisms of female longevity confer any resistance to diseases of the aging brain? Can we augment sex chromosome-based mechanisms to prevent diseases of aging in both men and women?
 
-   ![Green and red fluorescent neurons in the mouse hippocampus CA1](../images/slide-hippocampus.jpg)  
-   *[Abdulai-Saiku et al. (2025) Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC11798838/)*
+
+![Peripheral klotho increases synaptic functions and enhances cognition in young and aging mice](../images/klotho-cognition.png)  
+*[Leon et al. (2017) Cell Rep](https://pubmed.ncbi.nlm.nih.gov/28793260/)*
 
 2. **An anti-aging factor prevents cognitive decline related to Alzheimer’s disease.**  
    Over the past decade, we have gained an understanding that the aging process is plastic – that modifying specific molecules can dramatically increase the lifespan of organisms ranging from worms to mice. However, it remains largely unknown whether anti-aging approaches can prevent aging-related disease such as AD. Our preliminary findings suggest that they can. Stay tuned!
-
-   ![Peripheral klotho increases synaptic functions and enhances cognition in young and aging mice](../images/klotho-cognition.png)  
-   *[Leon et al. (2017) Cell Rep](https://pubmed.ncbi.nlm.nih.gov/28793260/)*
 
 **Key questions we are investigating:**
 
