@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="slider">
 {{- range .Params.slides }}
-<img src="{{ .image }}" alt="{{ .alt }}">
+<img src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .alt }}">
 {{- end }}
 </div>
 <div class="mission">{{ .Content }}</div>
 <div class="tiles">
 {{- range .Params.tiles }}
-<a href="{{ .url }}"><h2>{{ .title }}</h2><img loading="lazy" src="{{ .image }}" alt="{{ .title }}"></a>
+<a href="{{ .url | strings.TrimPrefix "/" | relURL }}"><h2>{{ .title }}</h2><img loading="lazy" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }}"></a>
 {{- end }}
 </div>
 {{ end }}

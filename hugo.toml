@@ -5,7 +5,7 @@ locale = "en"
 [[menu.main]]
   name = "Research"
   identifier = "research"
-  url = "/about/"
+  pageRef = "about"
   weight = 2
 
 [params]

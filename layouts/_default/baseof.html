@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-<link rel="preload" href="/fonts/league-gothic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css">
+<link rel="preload" href="{{ "fonts/league-gothic.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body>
 <div class="wrap">
 <header>
-<a class="logo" href="/"><span>Dubal Lab</span><small>Aging and the Brain</small></a>
+<a class="logo" href="{{ "" | relURL }}"><span>Dubal Lab</span><small>Aging and the Brain</small></a>
 <input type="checkbox" id="menu" class="menu-toggle"><label for="menu" class="menu-btn">Menu</label>
 <nav><ul>
 {{- range site.Menus.main }}
@@ -23,9 +23,9 @@
 <main>{{ block "main" . }}{{ end }}</main>
 <footer>
 <p class="follow">Follow us!
-<a href="{{ site.Params.facebook }}"><img src="/images/facebook.svg" alt="Facebook"></a>
-<a href="{{ site.Params.x }}"><img src="/images/x.svg" alt="X"></a></p>
-<p>&copy; {{ now.Year }} <a href="/">Dubal Lab</a> - All rights reserved.</p>
+<a href="{{ site.Params.facebook }}"><img src="{{ "images/facebook.svg" | relURL }}" alt="Facebook"></a>
+<a href="{{ site.Params.x }}"><img src="{{ "images/x.svg" | relURL }}" alt="X"></a></p>
+<p>&copy; {{ now.Year }} <a href="{{ "" | relURL }}">Dubal Lab</a> - All rights reserved.</p>
 </footer>
 </div>
 </body>

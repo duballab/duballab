@@ -6,7 +6,7 @@
 {{ range $pages }}
 {{ if eq .Section "people" }}
 <div class="person">
-<img loading="lazy" src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+<img loading="lazy" src="{{ .Params.photo | strings.TrimPrefix "/" | relURL }}" alt="{{ .Params.name }}">
 <div><b>{{ .Params.name }}{{ with .Params.email }}<br><a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</b><br><em>{{ .Title }}</em>{{ .Content }}</div>
 </div>
 {{ else if eq .Section "publications" }}
