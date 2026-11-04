@@ -6,14 +6,14 @@
 {{ range $pages }}
 {{ if eq .Section "people" }}
 <div class="person">
-<img src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+<img loading="lazy" src="{{ .Params.photo }}" alt="{{ .Params.name }}">
 <div><b>{{ .Params.name }}{{ with .Params.email }}<br><a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</b><br><em>{{ .Title }}</em>{{ .Content }}</div>
 </div>
 {{ else if eq .Section "publications" }}
 {{ $t := .Title }}
 <p><b>{{ with .Params.link }}<a href="{{ . }}">{{ $t }}</a>{{ else }}{{ $t }}{{ end }}</b><br>{{ .Params.authors }}<br><em>{{ .Params.journal_line }}</em></p>
 {{ else }}
-<p><b>{{ .Params.outlet }}</b> — <a href="{{ .Params.link }}">{{ .Title }}</a>{{ with .Plain }}<br>{{ . | safeHTML }}{{ end }}<br><a href="{{ .Params.link }}">Read More &gt;&gt;</a></p>
+<p class="news"><b>{{ .Params.outlet }}</b> — <a href="{{ .Params.link }}">{{ .Title }}</a>{{ with .Plain }}<br>{{ . | safeHTML }}{{ end }}<br><a href="{{ .Params.link }}">Read More &gt;&gt;</a></p>
 {{ end }}
 {{ end }}
 {{ end }}
