@@ -4,7 +4,7 @@ menu:
   main:
     weight: 6
 ---
-![Make a Gift](../images/make-a-gift.jpg)
+[![Make a Gift](../images/make-a-gift.jpg)](https://giving.ucsf.edu/fund/dr-dena-dubal-discretionary-fund)
 
 Our research is made possible by individuals, agencies and organizations that support our goal of improving the quality of life of our aging population. We are deeply grateful to the generosity that enables this work.
 
