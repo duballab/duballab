@@ -31,6 +31,8 @@ h1,.mission{text-wrap:balance}
 @keyframes drop{from{opacity:0;transform:translateY(-6px)}}
 .text::after{content:"";display:block;clear:both}
 .text img{float:right;margin:0 0 1em 1em}
+.text li img{float:none;display:block;width:100%;max-width:480px;margin:1em 0 .4em}
+.credit{display:block;margin-top:4px;font-size:11px;color:#666}
 .slider{position:relative;margin-top:25px;aspect-ratio:2.05}
 .slider img{position:absolute;width:100%;height:100%;object-fit:cover;opacity:0;animation:fade 24s infinite}
 .slider img:first-child{object-position:center 19%}
@@ -43,12 +45,13 @@ h1,.mission{text-wrap:balance}
 .mission strong{font-weight:normal;color:var(--blue)}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
 .tiles h2{margin:0 0 5px;font:normal 17px var(--display);text-transform:uppercase;color:#444}
-.tiles a{overflow:hidden;transition:transform .16s ease-out}
+.tiles a{display:block;overflow:hidden;transition:transform .16s ease-out}
 .tiles img{transition:transform .2s ease-out}
 @media (hover:hover) and (pointer:fine){.tiles a:hover img{transform:scale(1.04)}.follow a{transition:opacity .15s}.follow a:hover{opacity:.6}a:hover{text-decoration:underline}nav a:hover,.tiles a:hover,.logo:hover{text-decoration:none}}
 .tiles a:active{transform:scale(.97)}
 .tiles img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
-.tiles img[src$=".png"]{object-fit:contain;padding:12%;box-sizing:border-box}
+.tiles img[src$="tile-publications.png"]{object-position:84% center}
+.tiles img[src$="tile-ucsf.png"]{object-fit:contain;padding:12%;box-sizing:border-box}
 main>p,.person{margin-bottom:1em;padding-bottom:1em;border-bottom:var(--rule)}
 .person{display:flex;gap:15px}
 .person img{flex:none;width:120px;aspect-ratio:4/5;object-fit:cover;object-position:top;align-self:flex-start}
