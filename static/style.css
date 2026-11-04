@@ -1,6 +1,6 @@
 @font-face{font-family:"League Gothic";src:url(/fonts/league-gothic.woff2) format("woff2");font-display:block}
 @view-transition{navigation:auto}
-header{view-transition-name:header}
+header{view-transition-name:header;position:relative;z-index:2}
 main{view-transition-name:page}
 ::view-transition-old(page){animation:fade-out .12s ease-out both}
 ::view-transition-new(page){animation:drop .25s .08s ease-out both}
