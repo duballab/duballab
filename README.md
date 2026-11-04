@@ -2,13 +2,13 @@
 
 This is the source of the Dubal Lab website. It is a small, fast website built with [Hugo](https://gohugo.io), a tool that turns plain text files into web pages. There is no database and no passwords to maintain: every page is a text file in this project.
 
-This guide assumes **nothing is installed on your computer and you have no accounts yet**. It takes you from zero to a working, editable, published website. Read sections 1 to 3 once. After that, you only need section 4 (or 5) for everyday work.
+This guide assumes **nothing is installed on your computer and you have no accounts yet**. It takes you from zero to editing the live website at [duballab.ucsf.edu](https://duballab.ucsf.edu). Read sections 1 to 3 once. After that, you only need section 4 (or 5) for everyday work.
 
 ## Contents
 
 1. [How it fits together](#1-how-it-fits-together)
 2. [Starting from scratch: accounts and getting the project](#2-starting-from-scratch-accounts-and-getting-the-project)
-3. [Publishing the site with Cloudflare](#3-publishing-the-site-with-cloudflare)
+3. [How the site is published](#3-how-the-site-is-published)
 4. [Everyday editing in the browser (no installs)](#4-everyday-editing-in-the-browser-no-installs)
 5. [Editing on your own computer (optional)](#5-editing-on-your-own-computer-optional)
 6. [How to write the content files](#6-how-to-write-the-content-files)
@@ -23,11 +23,10 @@ This guide assumes **nothing is installed on your computer and you have no accou
 
 | Place | What it is | Account needed |
 |---|---|---|
-| **GitHub** | A website that stores the project files and remembers every past version. This is the "master copy". | Yes, free |
-| **Cloudflare** | Hosts the live website. Each time the master copy on GitHub changes, Cloudflare rebuilds and publishes the site automatically, in about two minutes. | Yes, free |
+| **GitHub** | A website that stores the project files and remembers every past version. This is the "master copy". It also hosts the live website with **GitHub Pages**: each time the master copy changes, GitHub rebuilds and publishes the site automatically, in about two minutes. | Yes, free |
 | **Pages CMS** *(optional)* | A friendly online editor with simple forms for people, publications and news. | Uses your GitHub login |
 
-The flow is always the same: **you change a file on GitHub, and the live site updates by itself.** If a change contains a mistake that stops the site from building, Cloudflare keeps showing the last good version, so a typo cannot take the site down.
+The flow is always the same: **you change a file on GitHub, and the live site updates by itself.** If a change contains a mistake that stops the site from building, the last good version stays online, so a typo cannot take the site down.
 
 You do not have to install anything on your computer for ordinary editing (section 4). Section 5 describes the optional, more advanced way of working locally.
 
@@ -35,7 +34,7 @@ You do not have to install anything on your computer for ordinary editing (secti
 
 ## 2. Starting from scratch: accounts and getting the project
 
-Do this once. Whoever owns the website should do it, using a shared lab email address if possible, so the website does not depend on one person's login.
+Do this once.
 
 ### 2.1 Create a GitHub account
 
@@ -43,61 +42,22 @@ Do this once. Whoever owns the website should do it, using a shared lab email ad
 2. Follow the steps. Use the lab's email address if there is one.
 3. Optional but recommended: switch on two-factor login under **Settings, then Password and authentication**.
 
-### 2.2 Get the project into your GitHub account
+### 2.2 Get access to the project
 
-The project currently lives in the repository **`adamcseresznye/duballab`**. You need a copy that belongs to the lab. Pick **one** of these:
+The project lives in the repository **[`duballab/duballab`](https://github.com/duballab/duballab)**, which belongs to the lab's GitHub organization. Ask an owner of the organization to add your GitHub account under the organization's **People** tab. The rest of this guide calls it **your repository**.
 
-**Option A: transfer ownership (cleanest).** The current owner opens the repository on GitHub, chooses **Settings**, scrolls to **Danger Zone**, chooses **Transfer**, and types the new owner's GitHub username. The new owner accepts the invitation sent by email. History is kept, and nothing needs to be copied.
-
-**Option B: the new owner gets a copy.**
-1. The current owner invites the new owner under the repository's **Settings, then Collaborators**.
-2. The new owner accepts the invitation, opens the repository, and chooses **Fork** (top right) to make a copy under their own account.
-3. Later, the original repository can be deleted.
-
-**Option C: start from a downloaded folder.**
-1. On the repository page choose **Code, then Download ZIP**, and unzip it.
-2. On GitHub choose **+ (top right), then New repository**. Name it `duballab`, keep it empty (do not add a README), and create it.
-3. On the new empty repository page choose **uploading an existing file**. Drag in the **contents** of the unzipped folder (the folders `content`, `layouts`, `static`, `tests` and the loose files). Drag the contents, not the outer folder. Hidden files such as `.gitignore` and `.pages.yml` are easy to miss: make sure they are included. If your upload is refused for having too many files, upload one folder at a time.
-4. Choose **Commit changes**.
-
-In all three cases you end with a repository in the lab's own GitHub account. The rest of this guide calls it **your repository**.
+Keep at least two owners, so the website does not depend on one person's login.
 
 ---
 
-## 3. Publishing the site with Cloudflare
+## 3. How the site is published
 
-Do this once.
+The site is already set up, and this runs by itself. You only need this section if something about the address or the hosting has to change.
 
-### 3.1 Create a Cloudflare account
-
-Go to [dash.cloudflare.com](https://dash.cloudflare.com) and sign up (free).
-
-### 3.2 Connect your repository
-
-1. In the Cloudflare dashboard open **Workers & Pages**.
-2. Choose **Create**, then **Connect to Git** (wording may vary slightly), and allow Cloudflare to access GitHub.
-3. Select your `duballab` repository.
-4. Enter these settings exactly:
-
-   | Setting | Value |
-   |---|---|
-   | Build command | `hugo --minify` |
-   | Deploy command | `npx wrangler deploy` |
-   | Non-production branch deploy command | `npx wrangler versions upload` |
-   | Root directory | *(leave empty)* |
-
-5. Add an **environment variable** named `HUGO_VERSION` with the value `0.169.0`. Cloudflare needs it to know which Hugo to use.
-6. Choose **Save and Deploy**. After a minute or two you get an address ending in `.workers.dev`. The project folder already contains a file called `wrangler.jsonc`, which tells Cloudflare where the built site is. You do not need to change it.
-
-To change the first part of the address, rename the project (the `name` in `wrangler.jsonc`, and the project name in the dashboard). The account part can be changed under **Workers & Pages** in the dashboard. To use your own address, such as `www.duballab.org`, register that domain and add it in the project's settings under **Domains & Routes**.
-
-### 3.3 Keep the site private while it is being built (optional)
-
-1. In Cloudflare, open **Zero Trust**, then **Access**, then **Applications**, then **Add an application**, then **Self-hosted**.
-2. Enter the site's address as the application domain.
-3. Add a policy with the action **Allow** that lists the email addresses allowed in.
-
-Visitors then receive a one-time code by email. Delete the application when the site is ready to be public.
+- **Building:** each change to the `main` version on GitHub starts the steps in `.github/workflows/pages.yml`, which build the site with Hugo and publish it on GitHub Pages. The Hugo version is set in that file.
+- **Address:** `duballab.ucsf.edu` is managed by UCSF IT, who point it to `duballab.github.io` with a CNAME record.
+- **GitHub setting:** under **Settings, then Pages** in the repository, **Source** is **GitHub Actions**, **Custom domain** is `duballab.ucsf.edu`, and **Enforce HTTPS** is ticked.
+- **Repository visibility:** the repository must stay **public**, because GitHub Pages is only free for public repositories. Never put passwords or private information in it.
 
 ---
 
@@ -132,7 +92,7 @@ Use this for the home page, About, Links, Positions, Contact, Donate, and for th
 
 ### 4.4 Follow the build
 
-To see whether the site rebuilt, or why it did not, open **Workers & Pages** in Cloudflare, open the project, and choose the **Deployments** tab. A green entry means success. A red entry shows the error: the live site keeps showing the last good version until the error is fixed.
+To see whether the site rebuilt, or why it did not, open your repository on GitHub and choose the **Actions** tab. A green entry means success. A red entry shows the error: the live site keeps showing the last good version until the error is fixed.
 
 ---
 
@@ -381,7 +341,7 @@ hugo --minify
 
 This creates a folder called `public` containing the finished site. It is rebuilt whenever needed and is ignored by GitHub, so you never edit or upload it.
 
-If you only use the browser workflow (section 4), the equivalent check is the **Deployments** tab in Cloudflare (section 4.4): a failed build shows up there and does not affect the live site.
+If you only use the browser workflow (section 4), the equivalent check is the **Actions** tab on GitHub (section 4.4): a failed build shows up there and does not affect the live site.
 
 ---
 
@@ -389,8 +349,8 @@ If you only use the browser workflow (section 4), the equivalent check is the **
 
 | Problem | What to try |
 |---|---|
-| I changed something but the live site is the same | Wait two minutes. Check the **Deployments** tab in Cloudflare for a red entry. Then hard refresh the page with **Ctrl + F5**. |
-| The Deployments tab shows a red entry | Open it and read the error. It names the file and line. Usually a missing `---`, quotation mark or colon. Compare with a similar file that works, or undo your last change on GitHub (open the file, choose **History**, and revert). |
+| I changed something but the live site is the same | Wait two minutes. Check the **Actions** tab on GitHub for a red entry. Then hard refresh the page with **Ctrl + F5**. |
+| The Actions tab shows a red entry | Open it and read the error. It names the file and line. Usually a missing `---`, quotation mark or colon. Compare with a similar file that works, or undo your last change on GitHub (open the file, choose **History**, and revert). |
 | The menu or layout looks wrong after a change | Hard refresh with **Ctrl + F5**. Your browser may be showing an old stylesheet. |
 | A picture does not show | Check that the file is in `static/images`, that the file name and capital letters match exactly, and that the path starts with `/images/`. |
 | `hugo` is "not recognised" | Close PowerShell, open a new window. If it still fails, repeat section 5.1. |
@@ -421,7 +381,7 @@ duballab/
 ├── layouts/              Page templates: how content is arranged on a page
 ├── hugo.toml             Site name, footer links, the Research menu entry
 ├── .pages.yml            Settings for the Pages CMS online editor
-├── wrangler.jsonc        Settings Cloudflare uses to publish the site
+├── .github/workflows/    The steps GitHub follows to build and publish the site
 ├── tests/test_site.py    The automatic check (section 8)
 └── .gitignore            Files that are never sent to GitHub
 ```
