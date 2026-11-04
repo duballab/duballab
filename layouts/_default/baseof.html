@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="/"><span>Dubal Lab</span><small>Aging and the Brain</small></a>
+<input type="checkbox" id="menu" class="menu-toggle"><label for="menu" class="menu-btn">Menu</label>
+<nav><ul>
+{{- range site.Menus.main }}
+<li><a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="on"{{ end }}>{{ .Name }}</a>
+{{- with .Children }}<ul>{{ range . }}<li><a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="on"{{ end }}>{{ .Name }}</a></li>{{ end }}</ul>{{ end }}</li>
+{{- end }}
+</ul></nav>
+</header>
+<main>{{ block "main" . }}{{ end }}</main>
+<footer>
+<p class="follow">Follow us!
+<a href="{{ site.Params.facebook }}"><img src="/images/facebook.svg" alt="Facebook"></a>
+<a href="{{ site.Params.x }}"><img src="/images/x.svg" alt="X"></a></p>
+<p>&copy; {{ now.Year }} <a href="/">Dubal Lab</a> - All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+baseURL = "/"
+title = "Dubal Lab"
+locale = "en"
+
+[[menu.main]]
+  name = "Research"
+  identifier = "research"
+  url = "/about/"
+  weight = 2
+
+[params]
+  facebook = "https://www.facebook.com/duballab"
+  x = "https://x.com/duballab"

@@ -1,0 +1,40 @@
+media:
+  input: static/images
+  output: /images
+content:
+  - name: people
+    label: People
+    type: collection
+    path: content/people
+    format: yaml-frontmatter
+    fields:
+      - {name: name, label: Name, type: string}
+      - {name: title, label: Title, type: string}
+      - {name: email, label: Email, type: string}
+      - {name: photo, label: Photo, type: image}
+      - {name: order, label: Order, type: number}
+      - {name: body, label: Bio, type: rich-text}
+  - name: publications
+    label: Publications
+    type: collection
+    path: content/publications
+    exclude: [_index.md]
+    format: yaml-frontmatter
+    fields:
+      - {name: title, label: Title, type: string}
+      - {name: link, label: URL, type: string}
+      - {name: authors, label: Authors, type: string}
+      - {name: journal_line, label: Journal line, type: string}
+      - {name: date, label: Date, type: date}
+  - name: news
+    label: News
+    type: collection
+    path: content/news
+    exclude: [_index.md]
+    format: yaml-frontmatter
+    fields:
+      - {name: outlet, label: Outlet, type: string}
+      - {name: title, label: Title, type: string}
+      - {name: link, label: URL, type: string}
+      - {name: date, label: Date, type: date}
+      - {name: body, label: Excerpt, type: rich-text}
