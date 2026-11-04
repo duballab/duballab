@@ -1,6 +1,6 @@
 ---
 name: "Veronika Kulik"
-title: "Graduate Student"
+title: "Graduate Student, Neuroscience Program"
 email: "veronika.kulik@ucsf.edu"
 photo: /images/people/veronika.jpg
 order: 8

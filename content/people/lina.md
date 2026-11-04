@@ -1,6 +1,6 @@
 ---
 name: "Lina Afonso"
-title: "Graduate Student"
+title: "Graduate Student, Developmental and Stem Cell Biology Program"
 email: "lina.afonso@ucsf.edu"
 photo: /images/people/lina.jpg
 order: 7

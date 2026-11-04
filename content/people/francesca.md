@@ -1,6 +1,6 @@
 ---
 name: "Francesca Marino"
-title: "Graduate Student"
+title: "Graduate Student, Neuroscience Program"
 email: "francesca.marino@ucsf.edu"
 photo: /images/people/francesca.jpg
 order: 9

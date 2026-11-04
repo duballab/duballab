@@ -1,6 +1,6 @@
 ---
 name: "Nilla Sivakumar"
-title: "Graduate Student"
+title: "Graduate Student, Neuroscience Program"
 email: "nilla.sivakumar@ucsf.edu"
 photo: /images/people/nilla-sivakumar.jpg
 order: 10
