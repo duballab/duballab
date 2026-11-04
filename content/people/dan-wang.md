@@ -1,6 +1,6 @@
 ---
 name: "Dan Wang"
-title: "Lab Member"
+title: "Lab Manager"
 email: "dan.wang@ucsf.edu"
 photo: /images/people/dan-wang.jpg
 order: 12

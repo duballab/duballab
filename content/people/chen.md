@@ -1,6 +1,6 @@
 ---
 name: "Chen Chen"
-title: "Lab Member"
+title: "Research Associate"
 email: "chen.chen2@ucsf.edu"
 photo: /images/people/chen.jpg
 order: 11
