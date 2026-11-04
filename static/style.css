@@ -45,12 +45,18 @@ footer p:last-child{font-size:11px}
 header{flex-wrap:wrap;align-items:flex-start}
 .menu-btn{display:block}
 .menu-toggle:focus-visible+.menu-btn{outline:var(--rule);outline-offset:4px}
-.menu-toggle:checked+.menu-btn{color:var(--blue)}
-nav{display:none;width:100%;text-align:right}
-.menu-toggle:checked~nav{display:block}
-nav ul{flex-direction:column;gap:6px;margin-top:10px}
-nav li ul{display:flex;position:static;margin:6px 0 0;padding:0 14px 0 0;border:0}
-nav li ul a{padding:0}
+.menu-toggle:checked+.menu-btn{color:var(--blue);border-color:transparent}
+.menu-toggle:checked+.menu-btn::before,.menu-toggle:checked+.menu-btn::after{content:"";position:absolute;left:0;right:0;top:6px;border-top:2px solid;transform:rotate(45deg)}
+.menu-toggle:checked+.menu-btn::before{transform:rotate(-45deg)}
+nav{display:none;width:100%;margin-top:12px;border-top:var(--rule);text-align:right}
+.menu-toggle:checked~nav{display:block;animation:drop .2s ease-out}
+@keyframes drop{from{opacity:0;transform:translateY(-8px)}}
+nav ul{flex-direction:column;gap:0;margin:0}
+nav>ul>li{border-bottom:var(--rule)}
+nav a{display:block;padding:12px 0;font-size:22px;letter-spacing:1px}
+nav li ul{display:flex;position:static;margin:0;padding:0 16px 8px 0;border:0}
+nav li ul a{padding:6px 0;font-size:17px;color:#888}
+nav li ul a.on{color:var(--blue)}
 }
 @media (max-width:600px){
 .tiles{grid-template-columns:repeat(2,1fr)}
