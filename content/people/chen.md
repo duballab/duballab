@@ -3,7 +3,7 @@ name: "Chen Chen"
 title: "Research Associate"
 email: "chen.chen2@ucsf.edu"
 photo: /images/people/chen.jpg
-order: 11
+order: 12
 ---
 Chen earned her bachelor’s degree in Preventive Medicine from the School of Medicine at Wuhan University of Science and Technology and later obtained her master’s degree in public health from the Beijing Institute of Medicine. Before joining the Dubal Lab, she worked at the Center for Disease Control in Tai’an City, China.
 
