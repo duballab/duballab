@@ -138,11 +138,20 @@ To see whether the site rebuilt, or why it did not, open **Workers & Pages** in 
 
 ## 5. Editing on your own computer (optional)
 
-Working locally lets you **preview your changes privately before they go live**, and run the automatic checks. It needs a one-time installation. You do **not** need to know Git commands: GitHub Desktop does it with buttons.
+Working locally lets you **preview your changes privately before they go live**, and run the automatic checks. It needs a one-time installation. You can use **GitHub Desktop** (buttons, no commands) or **Git** (typed commands). Each step below shows both: pick one.
 
 ### 5.1 One-time installation (Windows)
 
-1. **GitHub Desktop** (copies the project and sends changes with buttons): download it from [desktop.github.com](https://desktop.github.com), install it, and sign in with your GitHub account.
+1. **Either** GitHub Desktop (buttons): download it from [desktop.github.com](https://desktop.github.com), install it, and sign in with your GitHub account.
+
+   **Or** Git (typed commands): download **Git for Windows** from [git-scm.com/downloads](https://git-scm.com/downloads) and install it, accepting the default options. Then open a new PowerShell and tell Git who you are (once):
+
+   ```powershell
+   git config --global user.name "Your Name"
+   git config --global user.email "you@example.org"
+   ```
+
+   Use the email of your GitHub account. You log in to GitHub the first time you push (section 5.4): a browser window opens, you sign in, and Git remembers it.
 2. **Hugo** (shows the site on your own computer). Open the **Start menu**, type **PowerShell**, open it, and run:
 
    ```powershell
@@ -165,6 +174,15 @@ Working locally lets you **preview your changes privately before they go live**,
 1. Open GitHub Desktop.
 2. Choose **File, then Clone repository**. Pick your `duballab` repository from the list and choose a folder on your computer. Choose **Clone**.
 
+**With Git instead:** open PowerShell, go to the folder where you want the project, and run (replace `YOUR-ACCOUNT` with the GitHub account that owns the repository):
+
+```powershell
+git clone https://github.com/YOUR-ACCOUNT/duballab.git
+cd duballab
+```
+
+If GitHub asks you to sign in, follow the browser window that opens.
+
 ### 5.3 See the site on your computer
 
 1. In GitHub Desktop choose **Repository, then Open in Command Prompt** (or open PowerShell and go to the project folder).
@@ -184,6 +202,26 @@ Working locally lets you **preview your changes privately before they go live**,
 3. In GitHub Desktop, your changed files appear on the left. Type a short summary of what you did in the box **Summary** (for example "Add new postdoc"), then choose **Commit to main**.
 4. Choose **Push origin** (top). The live site updates within about two minutes.
 5. **At the start of each working day**, choose **Fetch origin** and then **Pull origin**, so you have the newest version.
+
+**With Git instead**, in PowerShell inside the project folder:
+
+```powershell
+git pull
+```
+
+Do this at the start of each working day. Then, after editing and checking the preview:
+
+```powershell
+git status
+git add .
+git commit -m "Add new postdoc"
+git push
+```
+
+- `git status` lists what you changed.
+- `git add .` selects all your changes.
+- `git commit -m "..."` saves them locally with a short description in the quotes.
+- `git push` sends them to GitHub. The first time, a browser window asks you to sign in to GitHub. The live site updates within about two minutes.
 
 If GitHub Desktop reports a "conflict", stop and ask the person who maintains the project instead of guessing.
 
