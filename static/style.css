@@ -1,4 +1,6 @@
-@font-face{font-family:"League Gothic";src:url(/fonts/league-gothic.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"League Gothic";src:url(/fonts/league-gothic.woff2) format("woff2");font-display:block}
+@view-transition{navigation:auto}
+html{overflow-y:scroll}
 :root{--blue:#0095FE;--rule:1px dotted #BFBFBF;--display:"League Gothic","Arial Narrow",Impact,sans-serif}
 body{margin:0;background:#fff;color:#252525;font:11px/1.45 Arial,Helvetica,sans-serif}
 a{color:var(--blue);text-decoration:none}
