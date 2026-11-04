@@ -11,7 +11,7 @@ Our research is made possible by individuals, agencies and organizations that su
 If you or your organization would like to further enable this research through philanthropy, you may donate online, send a check, or contact (call or email) Dena Dubal (415-502-7237 or [Dena.Dubal@ucsf.edu](mailto:Dena.Dubal@ucsf.edu)).
 
 **Giving Securely, Online**  
-Click the “Make a Gift” icon (to the right) to connect securely to The UCSF Foundation. The first thing you’ll see on the donation page is the **Choose a Designation** button. After clicking on this button you can enter “Dubal Lab” as the **Other** to direct your contribution to our lab.
+Click the “Make a Gift” icon (to the right) to connect securely to The UCSF Foundation. On the page that opens, choose **One-Time** or **Monthly**, enter an amount, and choose **Add to Giving Cart**. Your gift goes to the Dr. Dena Dubal Discretionary Fund.
 
 **Giving by Mail**  
 Please make your check payable to the UCSF Foundation and include “Dubal Lab” in the memo line of your check. You will receive a confirmation note in the mail for your tax records.
