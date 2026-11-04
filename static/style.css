@@ -46,10 +46,10 @@ header{flex-wrap:wrap;align-items:flex-start}
 .menu-btn{display:block}
 .menu-toggle:focus-visible+.menu-btn{outline:var(--rule);outline-offset:4px}
 .menu-toggle:checked+.menu-btn{color:var(--blue)}
-nav{display:none;width:100%}
+nav{display:none;width:100%;text-align:right}
 .menu-toggle:checked~nav{display:block}
 nav ul{flex-direction:column;gap:6px;margin-top:10px}
-nav li ul{display:flex;position:static;margin:6px 0 0;padding:0 0 0 14px;border:0}
+nav li ul{display:flex;position:static;margin:6px 0 0;padding:0 14px 0 0;border:0}
 nav li ul a{padding:0}
 }
 @media (max-width:600px){
