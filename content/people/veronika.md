@@ -1,7 +1,7 @@
 ---
-name: "Veronika"
-title: "Lab Member"
-email: ""
+name: "Veronika Kulik"
+title: "Graduate Student"
+email: "veronika.kulik@ucsf.edu"
 photo: /images/people/veronika.jpg
 order: 6
 ---

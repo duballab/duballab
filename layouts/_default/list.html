@@ -7,7 +7,7 @@
 {{ if eq .Section "people" }}
 <div class="person">
 <img src="{{ .Params.photo }}" alt="{{ .Params.name }}">
-<div><b>{{ .Params.name }}{{ with .Params.email }} <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</b><br><em>{{ .Title }}</em>{{ .Content }}</div>
+<div><b>{{ .Params.name }}{{ with .Params.email }}<br><a href="mailto:{{ . }}">{{ . }}</a>{{ end }}</b><br><em>{{ .Title }}</em>{{ .Content }}</div>
 </div>
 {{ else if eq .Section "publications" }}
 {{ $t := .Title }}
