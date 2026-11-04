@@ -1,7 +1,7 @@
 ---
 name: "Beril Erdogdu, PhD"
 title: "BCBI Postdoctoral Fellow"
-email: "beril.erdogdu@ucsf.edu"
+email: "berilerdogdu@berkeley.edu"
 photo: /images/people/beril-erdogdu.jpg
 order: 4
 ---
