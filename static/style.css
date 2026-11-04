@@ -48,6 +48,7 @@ h1,.mission{text-wrap:balance}
 @media (hover:hover) and (pointer:fine){.tiles a:hover img{transform:scale(1.04)}.follow a{transition:opacity .15s}.follow a:hover{opacity:.6}a:hover{text-decoration:underline}nav a:hover,.tiles a:hover,.logo:hover{text-decoration:none}}
 .tiles a:active{transform:scale(.97)}
 .tiles img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.tiles img[src$=".png"]{object-fit:contain;padding:12%;box-sizing:border-box}
 main>p,.person{margin-bottom:1em;padding-bottom:1em;border-bottom:var(--rule)}
 .person{display:flex;gap:15px}
 .person img{flex:none;width:120px;aspect-ratio:4/5;object-fit:cover;object-position:top;align-self:flex-start}
