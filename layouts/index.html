@@ -7,7 +7,7 @@
 <div class="mission">{{ .Content }}</div>
 <div class="tiles">
 {{- range .Params.tiles }}
-<div><a href="{{ .url | strings.TrimPrefix "/" | relURL }}"><h2>{{ .title }}</h2><img loading="lazy" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }}"></a>{{ with .credit }}<small class="credit">{{ . }}</small>{{ end }}</div>
+<div><a href="{{ .url | strings.TrimPrefix "/" | relURL }}"><h2>{{ .title }}</h2><img loading="lazy" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }}">{{ with .caption }}<span class="cap">{{ . }}</span>{{ end }}</a>{{ with .credit }}<small class="credit">{{ . }}</small>{{ end }}</div>
 {{- end }}
 </div>
 {{ end }}

@@ -12,6 +12,4 @@ Email: [Dena.Dubal@ucsf.edu](mailto:Dena.Dubal@ucsf.edu)
 Dubal Lab  
 19A Building  
 675 Nelson Rising Lane, Room 292  
-San Francisco, CA 94158  
-Lab Phone: 415-502-7171  
-Fax: 415-502-7172
+San Francisco, CA 94158

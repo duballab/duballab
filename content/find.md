@@ -25,14 +25,16 @@ We seek to uncover the fundamental biology of the female brain, integrate basic 
 
 **May 21, 2026 | UCSF Mission Bay**
 
-The inaugural FIND Symposium brought together scientists, clinicians, and trainees to share discoveries and advance research in female brain biology and women's brain health.
+Organized and hosted by Dr. Dena Dubal, the FIND Symposium brought together leaders and researchers to advance discoveries in women's brain health. The program featured scientific presentations, interdisciplinary discussions moderated by leaders from BARI, BCHSI, and the Fein MAC, and a trainee poster session highlighting emerging research.
 
-Hosted by Dr. Dena Dubal, the symposium featured scientific presentations, interdisciplinary discussions, and a trainee poster session highlighting emerging research.
+Sponsored by: Weill Institute for Neurosciences
 
 ![Dr. Dena Dubal presenting the FIND mission at the symposium](../images/find-symposium-1.jpg)
-![Panel discussion at the FIND Symposium, May 21, 2026, UCSF Mission Bay](../images/find-symposium-5.jpg)
-![Trainees discussing a poster at the symposium](../images/find-symposium-3.jpg)
-![Group photo of trainees with Dr. Dena Dubal at the symposium](../images/find-symposium-4.jpg)
+![Full audience at the FIND Symposium, UCSF Mission Bay](../images/find-symposium-2.jpg)
+![Panel discussion at the FIND Symposium, May 21, 2026, UCSF Mission Bay](../images/find-symposium-3.jpg)
+![Panelists laughing during a discussion at the symposium](../images/find-symposium-4.jpg)
+![Trainees and guests at the poster session](../images/find-symposium-5.jpg)
+![Panelists in conversation in front of the FIND Symposium program slide](../images/find-symposium-6.jpg)
 
 [View Photos from the FIND Symposium](https://janericheyphotography.pixieset.com/ucsfneurosciencessymposium/)
 

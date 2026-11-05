@@ -27,6 +27,7 @@ class SiteTest(unittest.TestCase):
     def test_find_page_linked_from_home(self):
         subprocess.run(["hugo", "--minify"], cwd=ROOT, check=True)
         self.assertIn("find/", (ROOT / "public/index.html").read_text(encoding="utf-8"))
+        self.assertIn("Female Initiative for Neuroscience Discovery", (ROOT / "public/index.html").read_text(encoding="utf-8"))
         self.assertIn("FIND", (ROOT / "public/find/index.html").read_text(encoding="utf-8"))
 
     def test_head_meta_and_404(self):
