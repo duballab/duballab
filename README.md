@@ -213,10 +213,11 @@ Keep the `---` lines, colons and quotation marks exactly as in the examples.
 | `content/positions.md` | Positions |
 | `content/contact.md` | Contact |
 | `content/donate.md` | Donate |
+| `content/find.md` | FIND page (reached from the FIND tile on the home page) |
 | `content/people/*.md` | People: one file per person |
 | `content/publications/*.md` | Research, then Publications: one file per paper |
 | `content/news/*.md` | Research, then News: one file per news item |
-| `hugo.toml` | Site name and the Facebook and X addresses in the footer |
+| `hugo.toml` | Site name and the Research menu entry |
 
 ### 6.2 Markdown cheat sheet
 
@@ -233,7 +234,7 @@ Keep the `---` lines, colons and quotation marks exactly as in the examples.
 
 ### 6.3 The home page
 
-In `content/_index.md`, the paragraph under the second `---` is the mission statement. Text between double stars, like `**aging and neuroscience laboratory**`, appears in blue.
+In `content/_index.md`, the paragraph under the second `---` is the mission statement.
 
 At the top of the same file:
 
@@ -303,7 +304,6 @@ Two or three sentences from the article, shown under the headline.
 ### 6.7 The menu and the footer
 
 - **Menu order**: each page file has a `weight` number in its front matter. Lower numbers come first.
-- **Facebook and X links**: change the addresses under `[params]` in `hugo.toml`.
 - **Site name**: the `title` line in `hugo.toml`.
 
 ---
@@ -371,6 +371,7 @@ duballab/
 │   ├── positions.md      Positions page
 │   ├── contact.md        Contact page
 │   ├── donate.md         Donate page
+│   ├── find.md           FIND page
 │   ├── people/           One file per person
 │   ├── publications/     One file per publication
 │   └── news/             One file per news item

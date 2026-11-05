@@ -1,5 +1,5 @@
 ---
-outlet: "YouTube"
+outlet: "NIH"
 title: "A Boost to the Brain"
 link: "https://www.youtube.com/watch?v=9zBj37nsvPE"
 date: 2014-05-09

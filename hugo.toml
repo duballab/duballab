@@ -7,7 +7,3 @@ locale = "en"
   identifier = "research"
   pageRef = "about"
   weight = 2
-
-[params]
-  facebook = "https://www.facebook.com/duballab"
-  x = "https://x.com/duballab"

@@ -24,6 +24,11 @@ class SiteTest(unittest.TestCase):
                 bad = re.findall(r"""(?:href|src)=["']?/(?!sub/)[a-z]\S*""", html.read_text(encoding="utf-8"))
                 self.assertEqual(bad, [], html)
 
+    def test_find_page_linked_from_home(self):
+        subprocess.run(["hugo", "--minify"], cwd=ROOT, check=True)
+        self.assertIn("find/", (ROOT / "public/index.html").read_text(encoding="utf-8"))
+        self.assertIn("FIND", (ROOT / "public/find/index.html").read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -6,31 +6,46 @@ menu:
     weight: 1
 ---
 **What do we study?**  
-We study aging and diseases of the aging brain. Since aging is the primary risk factor for most neurodegenerative diseases, our research is aimed at one critical question: Can we use “anti-aging” strategies to prevent diseases of aging such as Alzheimer’s disease?
+We study the biology of aging, longevity, and diseases of the aging brain, including Alzheimer's and Parkinson's diseases. Because aging is the greatest risk factor for neurodegenerative disease, we ask a fundamental question: **Can we harness mechanisms of longevity and resilience to protect the brain from aging and disease?**
+
+Our research focuses on longevity factors, sex chromosomes, hormones, and sex-specific biology to discover new ways to preserve cognition, prevent neurodegenerative disease, and advance brain health for women and men.
 
 **Why do we study aging and diseases of the aging brain?**  
-The world’s population is aging rapidly and the number of elderly people worldwide will exceed 2 billion by the year 2050. We now face major challenges of aging – particularly of the aging brain. Cognitive decline from aging and age-related diseases such as Alzheimer’s has emerged as one of the largest health threats to our aging societies. It is imperative that we identify and understand basic mechanisms of aging and longevity – and then determine whether these mechanisms can decrease vulnerability to neurodegenerative conditions of aging, such as Alzheimer’s disease.
+As the world's population ages, cognitive decline and neurodegenerative diseases pose growing threats to human health. Yet some individuals maintain remarkable cognitive function despite aging or brain pathology. Women live longer than men but face a disproportionate burden of Alzheimer's disease.
+
+Understanding the biological mechanisms of longevity, cognitive resilience, and sex differences may reveal new ways to prevent disease and promote healthy brain aging.
 
 **How do we study aging and disease?**  
-We investigate aging and brain disease from the cellular and molecular to the network and cognitive levels using cutting-edge methods. We implement mouse models of aging and disease to identify, develop, and assess novel approaches to prevent or cure disease. In parallel, we investigate the human relevance of our discoveries in collaboration with clinical programs that include studies of human brain imaging, neurocognitive testing, and post-mortem brain tissue analysis.
+We investigate aging and brain disease from molecules and cells to neural circuits and cognition. Our research combines mouse models, molecular genetics, genomics, epigenetics, and neuroscience with studies of human cognition, brain imaging, biomarkers, and brain tissue.
+
+By integrating fundamental discoveries with human biology, we aim to identify new mechanisms and therapeutic strategies to protect the aging brain.
 
 **What have we discovered?**  
-Recently, we discovered two “anti-aging” strategies that may potentially lead to novel treatment strategies to promote healthy aging:
+Our laboratory has made foundational discoveries in two major areas of aging biology.
 
-1. **Sex chromosomes impact longevity and disease susceptibility.**  
-   Females live longer than males across varied economic, cultural, and environmental conditions and even with neurodegenerative disease. Though social and behavioral factors may influence female longevity, it is a fundamental biological phenomenon that spans much of the animal kingdom. Remarkably, molecular mechanisms that underlie female longevity have long remained unknown. How do females live longer? Do underlying mechanisms of female longevity confer any resistance to diseases of the aging brain? Can we augment sex chromosome-based mechanisms to prevent diseases of aging in both men and women?
+1. **Sex chromosomes regulate longevity, brain aging, and cognition.**  
+   Our research established that [XX sex chromosomes promote longevity](https://doi.org/10.1111/acel.12871) and that the [parental origin of the X chromosome influences brain aging](https://doi.org/10.1038/s41586-024-08457-y). We further discovered that [aging awakens genes on the silent X chromosome](https://doi.org/10.1126/sciadv.ads8169) and can these be harnessed to improve cognition in the female – and male – brain.
+
+   These discoveries reveal fundamental roles for sex chromosomes in brain resilience and open new avenues for understanding sex differences in aging, Alzheimer's disease, and women's brain health. Our recent perspectives and reviews in [JAMA](https://jamanetwork.com/journals/jama/fullarticle/2850180), [Neuron](https://doi.org/10.1016/j.neuron.2024.12.005) and [Science](https://doi.org/10.1126/science.aeh0145) explore the broader implications of female biology for women’s health in aging and disease.
 
    ![Green and red fluorescent neurons in the mouse hippocampus CA1](../images/slide-hippocampus.jpg)  
    *[Abdulai-Saiku et al. (2025) Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC11798838/)*
 
-2. **An anti-aging factor prevents cognitive decline related to Alzheimer’s disease.**  
-   Over the past decade, we have gained an understanding that the aging process is plastic – that modifying specific molecules can dramatically increase the lifespan of organisms ranging from worms to mice. However, it remains largely unknown whether anti-aging approaches can prevent aging-related disease such as AD. Our preliminary findings suggest that they can. Stay tuned!
+2. **The longevity factor klotho enhances cognition and brain resilience.**  
+   We pioneered the discovery that [klotho enhances cognition](https://doi.org/10.1016/j.celrep.2014.03.076) and [protects against cognitive deficits in models of Alzheimer's disease](https://doi.org/10.1523/JNEUROSCI.5791-12.2015). We subsequently demonstrated that [systemic klotho treatment improves brain function](https://doi.org/10.1016/j.celrep.2017.07.024), including in [aged nonhuman primates](https://doi.org/10.1038/s43587-023-00441-x).
+
+   Our research also identified [platelet factor 4 (PF4) as a mediator of cognitive enhancement](https://doi.org/10.1038/s43587-023-00468-0) and revealed protective effects of klotho on cognition in [Parkinson's disease](https://www.jneurosci.org/content/46/18/e1904252026).
+
+   Together, these discoveries demonstrate the potential of targeting longevity biology to enhance cognition and protect against neurodegenerative disease. These discoveries are now advancing toward human clinical trials to test if klotho can improve cognition in neurodegenerative disease.
 
    ![Peripheral klotho increases synaptic functions and enhances cognition in young and aging mice](../images/klotho-cognition.png)  
    *[Leon et al. (2017) Cell Rep](https://pubmed.ncbi.nlm.nih.gov/28793260/)*
 
-**Key questions we are investigating:**
+**Key questions we are investigating**
 
-1. How do sex chromosomes impact longevity and disease susceptibility?
-2. How do “aging-suppressors” impact the brain?
-3. Can anti-aging strategies prevent cognitive decline in aging and diseases of aging?
+1. **How do longevity mechanisms protect the aging brain?** Can factors such as klotho enhance cognition and prevent neurodegenerative disease?
+2. **How do sex chromosomes influence longevity and brain aging?** Can we harness X chromosome biology to improve resilience?
+3. **What makes the female brain unique?** How do sex chromosomes and hormones shape women's brain health, aging, and disease?
+4. **What makes the male brain unique?** How do factors secreted by the testes and genes on the Y chromosome influence longevity, brain aging, and neurodegenerative disease?
+5. **Why are some brains resilient to aging and disease?** Can we identify and activate mechanisms that preserve cognition?
+6. **Can discoveries lead to new treatments?** Can we translate longevity and sex biology into therapies that improve brain health for women and men?
