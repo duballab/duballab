@@ -29,6 +29,18 @@ class SiteTest(unittest.TestCase):
         self.assertIn("find/", (ROOT / "public/index.html").read_text(encoding="utf-8"))
         self.assertIn("FIND", (ROOT / "public/find/index.html").read_text(encoding="utf-8"))
 
+    def test_head_meta_and_404(self):
+        subprocess.run(["hugo", "--minify"], cwd=ROOT, check=True)
+        for page in ("index.html", "find/index.html"):
+            html = (ROOT / "public" / page).read_text(encoding="utf-8")
+            self.assertIn('name=description', html, page)
+            self.assertIn('og:image', html, page)
+        self.assertIn("Page not found", (ROOT / "public/404.html").read_text(encoding="utf-8"))
+
+    def test_images_are_light(self):
+        for img in (ROOT / "static/images").glob("*.png"):
+            self.assertLess(img.stat().st_size, 100_000, img)
+
 
 if __name__ == "__main__":
     unittest.main()

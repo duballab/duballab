@@ -2,6 +2,9 @@ baseURL = "/"
 title = "Dubal Lab"
 locale = "en"
 
+[params]
+  description = "The Dubal Lab is an aging and neuroscience laboratory at UCSF studying longevity, brain resilience and women's brain health."
+
 [[menu.main]]
   name = "Research"
   identifier = "research"

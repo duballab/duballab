@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+{{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ site.Params.description }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ site.Params.description }}">
+<meta property="og:image" content="{{ "images/slide-golden-gate.jpg" | absURL }}">
 <link rel="preload" href="{{ "fonts/league-gothic.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ "style.css" | relURL }}">

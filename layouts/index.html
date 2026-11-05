@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="slider">
-{{- range .Params.slides }}
-<img src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .alt }}">
+{{- range $i, $s := .Params.slides }}
+<img{{ if $i }} loading="lazy"{{ end }} src="{{ $s.image | strings.TrimPrefix "/" | relURL }}" alt="{{ $s.alt }}">
 {{- end }}
 </div>
 <div class="mission">{{ .Content }}</div>

@@ -26,7 +26,7 @@ Our laboratory has made foundational discoveries in two major areas of aging bio
 1. **Sex chromosomes regulate longevity, brain aging, and cognition.**  
    Our research established that [XX sex chromosomes promote longevity](https://doi.org/10.1111/acel.12871) and that the [parental origin of the X chromosome influences brain aging](https://doi.org/10.1038/s41586-024-08457-y). We further discovered that [aging awakens genes on the silent X chromosome](https://doi.org/10.1126/sciadv.ads8169) and can these be harnessed to improve cognition in the female – and male – brain.
 
-   These discoveries reveal fundamental roles for sex chromosomes in brain resilience and open new avenues for understanding sex differences in aging, Alzheimer's disease, and women's brain health. Our recent perspectives and reviews in [JAMA](https://jamanetwork.com/journals/jama/fullarticle/2850180), [Neuron](https://doi.org/10.1016/j.neuron.2024.12.005) and [Science](https://doi.org/10.1126/science.aeh0145) explore the broader implications of female biology for women’s health in aging and disease.
+   These discoveries reveal fundamental roles for sex chromosomes in brain resilience and open new avenues for understanding sex differences in aging, Alzheimer's disease, and women's brain health. Our recent perspectives and reviews in [*JAMA*](https://jamanetwork.com/journals/jama/fullarticle/2850180), [*Neuron*](https://doi.org/10.1016/j.neuron.2024.12.005) and [*Science*](https://doi.org/10.1126/science.aeh0145) explore the broader implications of female biology for women’s health in aging and disease.
 
    ![Green and red fluorescent neurons in the mouse hippocampus CA1](../images/slide-hippocampus.jpg)  
    *[Abdulai-Saiku et al. (2025) Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC11798838/)*
@@ -38,7 +38,7 @@ Our laboratory has made foundational discoveries in two major areas of aging bio
 
    Together, these discoveries demonstrate the potential of targeting longevity biology to enhance cognition and protect against neurodegenerative disease. These discoveries are now advancing toward human clinical trials to test if klotho can improve cognition in neurodegenerative disease.
 
-   ![Peripheral klotho increases synaptic functions and enhances cognition in young and aging mice](../images/klotho-cognition.png)  
+   ![Peripheral klotho increases synaptic functions and enhances cognition in young and aging mice](../images/klotho-cognition.jpg)  
    *[Leon et al. (2017) Cell Rep](https://pubmed.ncbi.nlm.nih.gov/28793260/)*
 
 **Key questions we are investigating**
